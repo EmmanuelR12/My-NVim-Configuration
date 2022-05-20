@@ -1,0 +1,113 @@
+salir vim esc esc :q
+salir sin guardar esc esc :q!
+moverse en vim
+ l derecha 
+ h izquierda
+ j abajo
+ k arriba
+ w moverte hacia el siguiente incio de caracteres
+ b moverte haca atras en caracteres 
+ e al final del caracter
+
+insertar texto y agregarlo al final de una cadena de caracteres
+i .- insertar texto antes del cursor
+a .- posicionar texto despues del cursor
+A .- insertar al final de la linea
+
+x.- elimina caracteres
+
+Guardar un archivo
+:w
+:wq y salir del editor 
+
+gd ir a la definicon de la constante
+gf para navegar entre archivos
+ctrl+o y te regresa a la anterior tarea
+ctrl+i para adelantar a la sig tarea
+
+dw para eliminar texto en modo normal
+u.- desacer los cambios
+ctrl+r reacer 
+d luego shift+4 elimina toda una liena de texto
+
+se pueden combinar los moviemntos y las eliminaciones 
+por ejemplo 5l te mueve 5 caracteres hacia adelante o 3w o 4dpara eliminar 
+
+dd.elimina linea
+p pega linea
+
+remplazar unicamente un caracter = poscionas sobre el cursos r y luego el caracter que se va a tipear 
+operador de cambio = cw para eliminar una palabra 
+ciw elimina una plabara en donde este el cursos despues esc para salir\
+
+saltar lineas 
+inicio del archivo gg 
+final del archivo G
+mover a una linea en especifico numero de linea y G
+busqueda /escribir lo que estas buscando para dirigirte a las busquedas oprimir n y si quieres regresar N 
+
+% para moverse entre los parentesis existentes en el codigo 
+
+
+abrir una nueva linea (crear liena salto de linea) = o
+crar linea pero arriba de donde se encuentra el cursos = O 
+
+shit+r entra al modo de remplazar 
+
+copiar una seleccion 
+entrar modo visual v
+copiar = y 
+pegar = p
+
+ctrl+B entro al meni de archios
+m para entrar al menu de archivos
+con ctrl + las teclas de movimiento  te puedes desplazar entre los archivos 
+
+con s abres archivos en el menu de archivos 
+entrar a la temrinal :terminal
+salir de la terminal ctrl+\n
+volver al archivo ctr+wf
+pantalla completa ctrl+wo
+
+ctr+t abre terminal comando que yo puse 
+en el inicio de linea , y cc para comentar
+inicio de la linea presionar , y cu para descomentar
+
+tabulaciones
+To indent the current line
+==
+
+To indent the all the lines below the current line
+
+=G
+
+To indent n lines below the current line
+
+n==
+
+
+Buscar y remplazar
+:%s/cadena a buscar/cadena a remplazar/gc
+
+moverte entre buffers 
+numero de buffer + ctr 6
+
+ctrl + p buscar archvio
+ctrl + m buscar linea
+
+
+inicia un tag html <p y presionar > para cerrar tag o presionar otra vez para crear un salto de linea
+
+
+**************************************************************************************
+Links para configurar vim
+Plug 'othree/html5.vim'  
+https://github.com/sheerun/vim-polyglot
+https://github.com/alvan/vim-closetag
+https://github.com/machakann/vim-sandwich
+https://github.com/mattn/emmet-vim
+https://github.com/tpope/vim-fugitive
+https://github.com/neoclide/coc.nvim
+https://morioh.com/p/e472c4057aeb
+https://www.bha.ee/neovim-config-for-frontend-development/
+https://stsewd.dev/es/posts/neovim-plugins/#fzf
