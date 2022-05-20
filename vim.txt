@@ -92,6 +92,8 @@ Buscar y remplazar
 moverte entre buffers 
 numero de buffer + ctr 6
 
+:bd cierra el buffer actual
+
 ctrl + p buscar archvio
 ctrl + m buscar linea
 
