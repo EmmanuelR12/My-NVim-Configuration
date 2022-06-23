@@ -28,7 +28,7 @@ call plug#begin("~/.vim/plugged")
   Plug 'christoomey/vim-tmux-navigator'
 "Auto completado"
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
-    let g:coc_global_extensions = ['coc-emmet', 'coc-css', 'coc-html', 'coc-json', 'coc-prettier', 'coc-tsserver', 'coc-python', 'coc-tslint-plugin', 'coc-snippets', 'coc-highlight', 'coc-vetur','coc-angular'] 
+    let g:coc_global_extensions = ['coc-emmet', 'coc-css', 'coc-html', 'coc-json', 'coc-prettier', 'coc-tsserver', 'coc-python', 'coc-tslint-plugin', 'coc-snippets', 'coc-highlight', 'coc-vetur','coc-angular','coc-flutter']  
 ""Temas de la barra inferior"
   Plug 'bling/vim-airline'
   Plug 'vim-airline/vim-airline-themes'
@@ -59,6 +59,11 @@ call plug#begin("~/.vim/plugged")
   Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
   ""Vue highlight"
   Plug 'posva/vim-vue' 
+  ""Plugins for Flutter/Dart"
+  Plug 'dart-lang/dart-vim-plugin'
+  Plug 'natebosch/vim-lsc'
+  Plug 'natebosch/vim-lsc-dart'
+  Plug 'thosakwe/vim-flutter'
 call plug#end()
 
 
@@ -150,10 +155,10 @@ nmap <silent> [c <Plug>(coc-diagnostic-prev)
 nmap <silent> ]c <Plug>(coc-diagnostic-next)
 
 " Remap keys for gotos
-nmap <silent> gd <Plug>(coc-definition)
-nmap <silent> gy <Plug>(coc-type-definition)
-nmap <silent> gi <Plug>(coc-implementation)
-nmap <silent> gr <Plug>(coc-references)
+nmap <silent> <leader>gd <Plug>(coc-definition)
+nmap <silent> <leader> gy <Plug>(coc-type-definition)
+nmap <silent> <leader> gi <Plug>(coc-implementation)
+nmap <silent> <leader> gr <Plug>(coc-references)
 
 " Use K to show documentation in preview window
 nnoremap <silent> K :call <SID>show_documentation()<CR>
@@ -272,3 +277,8 @@ let g:WebDevIconsDefaultFileSymbolColor = s:blue " sets the color for files that
 nnoremap <C-p> :Files<CR> 
 ""Buscar lineas de codigo"
 nnoremap <C-m> :BLines<CR> 
+
+""ShortCuts for Flutter"
+nmap <silent><leader>ca <Plug>(coc-codelens-action)
+vmap <silent><leader>a  <Plug>(coc-codeaction-selected)
+nmap <silent><leader>a  <Plug>(coc-codeaction)

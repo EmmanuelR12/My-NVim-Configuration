@@ -100,7 +100,8 @@ ctrl + m buscar linea
 
 inicia un tag html <p y presionar > para cerrar tag o presionar otra vez para crear un salto de linea
 
-
+Wrap widget flutter
+tecla leader(en mi caso ,) y despues a
 **************************************************************************************
 Links para configurar vim
 Plug 'othree/html5.vim'  
