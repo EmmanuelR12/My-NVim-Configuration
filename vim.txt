@@ -95,13 +95,27 @@ numero de buffer + ctr 6
 :bd cierra el buffer actual
 
 ctrl + p buscar archvio
-ctrl + m buscar linea
+<,> lm buscar linea
 
 
 inicia un tag html <p y presionar > para cerrar tag o presionar otra vez para crear un salto de linea
 
 Wrap widget flutter
 tecla leader(en mi caso ,) y despues a
+
+atajos para coc
+,gd - ir a definicion 
+,gy - tipo de definicion
+,rn - renombrar la palabra actual
+,f - formato a el texto seleccionado 
+
+Atajos para ejecutar flutter
+<,>fa :FlutterRun<cr>
+<,>fq :FlutterQuit<cr>
+<,>fr :FlutterHotReload<cr>
+<,>fR :FlutterHotRestart<cr>
+<,>fD :FlutterVisualDebug<cr>
+
 **************************************************************************************
 Links para configurar vim
 Plug 'othree/html5.vim'  

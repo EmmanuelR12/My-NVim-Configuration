@@ -276,9 +276,16 @@ let g:WebDevIconsDefaultFileSymbolColor = s:blue " sets the color for files that
 ""buscar archivos"
 nnoremap <C-p> :Files<CR> 
 ""Buscar lineas de codigo"
-nnoremap <C-m> :BLines<CR> 
+nnoremap <leader>lm :BLines<cr> 
 
 ""ShortCuts for Flutter"
+""wrap widged"
 nmap <silent><leader>ca <Plug>(coc-codelens-action)
 vmap <silent><leader>a  <Plug>(coc-codeaction-selected)
 nmap <silent><leader>a  <Plug>(coc-codeaction)
+""Fluter options"
+nnoremap <leader>fa :FlutterRun<cr>
+nnoremap <leader>fq :FlutterQuit<cr>
+nnoremap <leader>fr :FlutterHotReload<cr>
+nnoremap <leader>fR :FlutterHotRestart<cr>
+nnoremap <leader>fD :FlutterVisualDebug<cr>
