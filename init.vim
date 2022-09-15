@@ -297,3 +297,6 @@ let g:user_emmet_expandabbr_key = '<C-a>,'
   nnoremap <leader>fr :FlutterHotReload<cr>
   nnoremap <leader>fR :FlutterHotRestart<cr>
   nnoremap <leader>fD :FlutterVisualDebug<cr>
+  "Configuration for vim close tag
+  let g:closetag_filenames = "*.html,*.xhtml,*.phtml,*.erb,*.jsx,*.js"
+  let g:closetag_xhtml_filenames = '*.xhtml,*.jsx,*.erb'
