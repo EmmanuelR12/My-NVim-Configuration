@@ -1,12 +1,4 @@
 
-                                                                     
-                                                                     
-    /|    / /                         ||   / /                       
-   //|   / /      ___        ___      ||  / /     ( )      _   __    
-  // |  / /     //___) )   //   ) )   || / /     / /     // ) )  ) ) 
- //  | / /     //         //   / /    ||/ /     / /     // / /  / /  
-//   |/ /     ((____     ((___/ /     |  /     / /     // / /  / /   
-
 # My-NVim-Configuration
 My personal configuration for the Neo vim text editor. This configuration is for package manager Vim Plug
 
