@@ -64,6 +64,8 @@ call plug#begin("~/.vim/plugged")
   Plug 'natebosch/vim-lsc'
   Plug 'natebosch/vim-lsc-dart'
   Plug 'thosakwe/vim-flutter'
+  ""Plugin syntax highlight"
+  Plug 'sheerun/vim-polyglot'
 call plug#end()
 
 
