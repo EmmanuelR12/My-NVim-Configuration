@@ -66,37 +66,39 @@ call plug#begin("~/.vim/plugged")
   Plug 'thosakwe/vim-flutter'
   ""Plugin syntax highlight"
   Plug 'sheerun/vim-polyglot'
-call plug#end()
+  ""Snippets React"
+  "Plug 'SirVer/ultisnips'
+  "Plug 'mlaursen/vim-react-snippets'
+  call plug#end()
 
 
-"=============================================================================================================================================================="
-"*********************************************************Configuraciones de los Plugins***********************************************************************
-"==============================================================================================================================================================
-""Nerd Commenter"
-" Create default mappings
-let g:NERDCreateDefaultMappings = 1
-let mapleader=","
-
-"Configuracion del tema"
-autocmd vimenter * ++nested colorscheme gruvbox
-"  if (has("termguicolors"))
-   "set termguicolors
+  "=============================================================================================================================================================="
+  "*********************************************************Configuraciones de los Plugins***********************************************************************
+  "==============================================================================================================================================================
+  ""Nerd Commenter"
+  " Create default mappings
+  let g:NERDCreateDefaultMappings = 1
+  let mapleader=","
+  "Configuracion del tema"
+  autocmd vimenter * ++nested colorscheme gruvbox
+  "  if (has("termguicolors"))
+  "set termguicolors
   "endif
   "syntax enable
-"colorscheme dracula
-"
-"Configuracion de airlane""
-let g:airline#extensions#tabline#enabled = 1  " Mostrar buffers abiertos (como pestañas)
-let g:airline#extensions#tabline#fnamemod = ':t'  " Mostrar sólo el nombre del archivo
-let g:airline#extensions#tabline#buffer_nr_show = 1
+  "colorscheme dracula
+  "
+  "Configuracion de airlane""
+  let g:airline#extensions#tabline#enabled = 1  " Mostrar buffers abiertos (como pestañas)
+  let g:airline#extensions#tabline#fnamemod = ':t'  " Mostrar sólo el nombre del archivo
+  let g:airline#extensions#tabline#buffer_nr_show = 1
 
-" Cargar fuente Powerline y símbolos (ver nota)
-let g:airline_powerline_fonts = 1
+  " Cargar fuente Powerline y símbolos (ver nota)
+  let g:airline_powerline_fonts = 1
 
-set noshowmode  " No mostrar el modo actual (ya lo muestra la barra de estado)
-"emmet"
-let g:user_emmet_expandabbr_key = '<C-a>,'
-"Configuracion nerdtree"
+  set noshowmode  " No mostrar el modo actual (ya lo muestra la barra de estado)
+  "emmet"
+  let g:user_emmet_expandabbr_key = '<C-a>,'
+  "Configuracion nerdtree"
   let g:NERDTreeShowHidden = 1
   let NERDTreeQuitOnOpen=1
   let g:NERDTreeMinimalUI = 1
