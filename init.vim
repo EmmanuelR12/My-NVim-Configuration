@@ -66,9 +66,9 @@ call plug#begin("~/.vim/plugged")
   Plug 'thosakwe/vim-flutter'
   ""Plugin syntax highlight"
   Plug 'sheerun/vim-polyglot'
-  ""Snippets React"
-  "Plug 'SirVer/ultisnips'
-  "Plug 'mlaursen/vim-react-snippets'
+  ""Plug Snippets React"
+  Plug 'SirVer/ultisnips'
+  Plug 'mlaursen/vim-react-snippets'
   call plug#end()
 
 
@@ -79,6 +79,7 @@ call plug#begin("~/.vim/plugged")
   " Create default mappings
   let g:NERDCreateDefaultMappings = 1
   let mapleader=","
+
   "Configuracion del tema"
   autocmd vimenter * ++nested colorscheme gruvbox
   "  if (has("termguicolors"))
@@ -107,7 +108,7 @@ call plug#begin("~/.vim/plugged")
   " Automaticaly close nvim if NERDTree is only thing left open
   autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
   nnoremap <silent> <C-b> :call NERDTreeToggleAndRefresh()<CR>
-  
+
   function NERDTreeToggleAndRefresh()
     :NERDTreeToggle
     if g:NERDTree.IsOpen()
@@ -147,9 +148,9 @@ call plug#begin("~/.vim/plugged")
   " Use tab for trigger completion with characters ahead and navigate.
   " Use command ':verbose imap <tab>' to make sure tab is not mapped by other plugin.
   inoremap <silent><expr> <TAB>
-	\ pumvisible() ? "\<C-n>" :
-	\ <SID>check_back_space() ? "\<TAB>" :
-	\ coc#refresh()
+        \ pumvisible() ? "\<C-n>" :
+        \ <SID>check_back_space() ? "\<TAB>" :
+        \ coc#refresh()
   inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
 
   function! s:check_back_space() abort
