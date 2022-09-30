@@ -116,6 +116,9 @@ Atajos para ejecutar flutter
 <,>fR :FlutterHotRestart<cr>
 <,>fD :FlutterVisualDebug<cr>
 
+Actualizar Plugins
+:PlugUpdate
+
 **************************************************************************************
 Links para configurar vim
 Plug 'othree/html5.vim'  
