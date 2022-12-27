@@ -69,6 +69,8 @@ call plug#begin("~/.vim/plugged")
   ""Plug Snippets React"
   Plug 'SirVer/ultisnips'
   Plug 'mlaursen/vim-react-snippets'
+  ""Manjeo de simbolos en el codigo"
+  Plug 'tpope/vim-surround'
   call plug#end()
 
 

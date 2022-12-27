@@ -109,6 +109,16 @@ atajos para coc
 ,rn - renombrar la palabra actual
 ,f - formato a el texto seleccionado 
 
+Git
+
+Vim surround(agregar caracteres a cadenas)
+yss + simbolo a insertar para insertar a una cadena que no tiene simbolos
+cs + simbolo para cambiar el simbolo
+cst + tag html para cambiar tag html
+ds + simbolo para eliminar simbolo
+ysiw + simbolo para agregar un simbolo solo a una palabra
+S<p class='example'> para agregar un tag con clase
+
 Atajos para ejecutar flutter
 <,>fa :FlutterRun<cr>
 <,>fq :FlutterQuit<cr>
