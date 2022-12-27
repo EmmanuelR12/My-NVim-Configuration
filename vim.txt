@@ -110,6 +110,13 @@ atajos para coc
 ,f - formato a el texto seleccionado 
 
 Git
+:G abre menu git
+S para trackear archivo
+U para desacer track
+I para ver cambios
+CC para hacer commit
+:G push 
+:G pull
 
 Vim surround(agregar caracteres a cadenas)
 yss + simbolo a insertar para insertar a una cadena que no tiene simbolos
