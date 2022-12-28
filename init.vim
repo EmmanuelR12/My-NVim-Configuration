@@ -19,8 +19,9 @@ filetype plugin on
 " ===============================================================================================================================================================
 call plug#begin("~/.vim/plugged")
 ""Tema vim"
-  Plug 'morhetz/gruvbox'
-"gestor de archivs"
+  "Plug 'morhetz/gruvbox'
+Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
+  "gestor de archivs"
   Plug 'scrooloose/nerdtree'
 "Iconos para del editor"
   Plug 'ryanoasis/vim-devicons' 
@@ -83,7 +84,9 @@ call plug#begin("~/.vim/plugged")
   let mapleader=","
 
   "Configuracion del tema"
-  autocmd vimenter * ++nested colorscheme gruvbox
+  "autocmd vimenter * ++nested colorscheme gruvbox
+  colorscheme tokyonight-night
+
   "  if (has("termguicolors"))
   "set termguicolors
   "endif
@@ -94,6 +97,7 @@ call plug#begin("~/.vim/plugged")
   let g:airline#extensions#tabline#enabled = 1  " Mostrar buffers abiertos (como pestañas)
   let g:airline#extensions#tabline#fnamemod = ':t'  " Mostrar sólo el nombre del archivo
   let g:airline#extensions#tabline#buffer_nr_show = 1
+  let g:airline_theme='violet'
 
   " Cargar fuente Powerline y símbolos (ver nota)
   let g:airline_powerline_fonts = 1
@@ -240,12 +244,12 @@ call plug#begin("~/.vim/plugged")
 
   " Remap <C-f> and <C-b> for scroll float windows/popups.
   "if has('nvim-0.4.0') || has('patch-8.2.0750')
-    "nnoremap <silent><nowait><expr> <C-f> coc#float#has_scroll() ? coc#float#scroll(1) : "\<C-f>"
-    "nnoremap <silent><nowait><expr> <C-b> coc#float#has_scroll() ? coc#float#scroll(0) : "\<C-b>"
-    "inoremap <silent><nowait><expr> <C-f> coc#float#has_scroll() ? "\<c-r>=coc#float#scroll(1)\<cr>" : "\<Right>"
-    "inoremap <silent><nowait><expr> <C-b> coc#float#has_scroll() ? "\<c-r>=coc#float#scroll(0)\<cr>" : "\<Left>"
-    "vnoremap <silent><nowait><expr> <C-f> coc#float#has_scroll() ? coc#float#scroll(1) : "\<C-f>"
-    "vnoremap <silent><nowait><expr> <C-b> coc#float#has_scroll() ? coc#float#scroll(0) : "\<C-b>"
+  "nnoremap <silent><nowait><expr> <C-f> coc#float#has_scroll() ? coc#float#scroll(1) : "\<C-f>"
+  "nnoremap <silent><nowait><expr> <C-b> coc#float#has_scroll() ? coc#float#scroll(0) : "\<C-b>"
+  "inoremap <silent><nowait><expr> <C-f> coc#float#has_scroll() ? "\<c-r>=coc#float#scroll(1)\<cr>" : "\<Right>"
+  "inoremap <silent><nowait><expr> <C-b> coc#float#has_scroll() ? "\<c-r>=coc#float#scroll(0)\<cr>" : "\<Left>"
+  "vnoremap <silent><nowait><expr> <C-f> coc#float#has_scroll() ? coc#float#scroll(1) : "\<C-f>"
+  "vnoremap <silent><nowait><expr> <C-b> coc#float#has_scroll() ? coc#float#scroll(0) : "\<C-b>"
   "endif
 
   " Use CTRL-S for selections ranges.
