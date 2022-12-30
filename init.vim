@@ -332,6 +332,10 @@ Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
   nnoremap <C-p> :Files<CR> 
   ""Buscar lineas de codigo"
   nnoremap <leader>lm :BLines<cr> 
+  ""Abrir buffers"
+  nnoremap <leader>b :Buffers<cr>
+
+  let g:fzf_preview_window = ['right,50%', 'ctrl-/']
 
   ""ShortCuts for Flutter"
   ""wrap widged"
