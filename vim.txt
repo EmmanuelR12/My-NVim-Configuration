@@ -133,6 +133,10 @@ Atajos para ejecutar flutter
 <,>fR :FlutterHotRestart<cr>
 <,>fD :FlutterVisualDebug<cr>
 
+Moverte entre tags html
+entrar en mdoo visual
+a+t o i+t y despues la letra o
+
 Actualizar Plugins
 :PlugUpdate
 
