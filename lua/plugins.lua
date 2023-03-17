@@ -44,6 +44,38 @@ return require("packer").startup(function(use)
   })
   --Navigate between panels
   use('christoomey/vim-tmux-navigator')
+  --Buffers
+  use({
+    'akinsho/bufferline.nvim', 
+    tag = "v3.*", 
+    requires = {
+      'nvim-tree/nvim-web-devicons'
+    },
+    config = function()
+      require("configs.bufferline")
+    end
+  }) 
+  --Comments
+  use("preservim/nerdcommenter")
+  --identLines
+  use ({
+    "lukas-reineke/indent-blankline.nvim",
+    config = function()
+      require("configs.ident-blankline")
+    end
+  }) 
+ -- Treesitter
+    use({
+        "nvim-treesitter/nvim-treesitter",
+        run = function()
+            require("nvim-treesitter.install").update({ with_sync = true })
+        end,
+        config = function()
+            require("configs.treesitter")
+        end,
+    })
+
+    use({ "windwp/nvim-ts-autotag", after = "nvim-treesitter" })
   --Completetion
 
 
