@@ -64,19 +64,73 @@ return require("packer").startup(function(use)
       require("configs.ident-blankline")
     end
   }) 
- -- Treesitter
+  -- Treesitter
+  use({
+    "nvim-treesitter/nvim-treesitter",
+    run = function()
+      require("nvim-treesitter.install").update({ with_sync = true })
+    end,
+    config = function()
+      require("configs.treesitter")
+    end,
+  })
+
+  use({ "windwp/nvim-ts-autotag", after = "nvim-treesitter" })
+  --Dashboard start
+  use ({
+    'glepnir/dashboard-nvim',
+    event = 'VimEnter',
+    requires = {'nvim-tree/nvim-web-devicons'},
+    config = function()
+      require('configs.dashboard').setup{
+      }
+    end
+  })
+  --LSP autocompletado
+  use ({
+    'VonHeikemen/lsp-zero.nvim',
+    branch = 'v1.x',
+    requires = {
+      -- LSP Support
+      {'neovim/nvim-lspconfig'},             -- Required
+      {'williamboman/mason.nvim'},           -- Optional
+      {'williamboman/mason-lspconfig.nvim'}, -- Optional
+
+      -- Autocompletion
+      {'hrsh7th/nvim-cmp'},         -- Required
+      {'hrsh7th/cmp-nvim-lsp'},     -- Required
+      {'hrsh7th/cmp-buffer'},       -- Optional
+      {'hrsh7th/cmp-path'},         -- Optional
+      {'saadparwaiz1/cmp_luasnip'}, -- Optional
+      {'hrsh7th/cmp-nvim-lua'},     -- Optional
+
+      -- Snippets
+      {'L3MON4D3/LuaSnip'},             -- Required
+      {'rafamadriz/friendly-snippets'}, -- Optional
+    },
+
+    config = function()
+      require("configs.lsp-zero")
+    end,
+
+  })
+  --Change characters
+  use('tpope/vim-surround')
+
+-- Auto pairs
     use({
-        "nvim-treesitter/nvim-treesitter",
-        run = function()
-            require("nvim-treesitter.install").update({ with_sync = true })
-        end,
+        "windwp/nvim-autopairs",
         config = function()
-            require("configs.treesitter")
+            require("configs.autopairs")
         end,
     })
-
-    use({ "windwp/nvim-ts-autotag", after = "nvim-treesitter" })
-  --Completetion
-
+  --Git integration
+  use({
+    "lewis6991/gitsigns.nvim",
+    config = function()
+      require("configs.gitsigns")
+    end,
+  })
+  use("tpope/vim-fugitive")
 
 end)

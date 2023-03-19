@@ -18,6 +18,7 @@ if status then
     map("n", "<leader>fh", telescope.help_tags)
     map("n", "<leader>fs", telescope.git_status)
     map("n", "<leader>fc", telescope.git_commits)
+    map("n", "<leader>fb", telescope.git_branches)
 else
     print("Telescope not found")
 end
